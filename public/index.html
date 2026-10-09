@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f4f9">
+    <title>My Commute Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+</head>
+<body>
+    <main>
+        <header class="page-header">
+            <div>
+                <p class="eyebrow">LIVE TRANSIT</p>
+                <h1>My Commute</h1>
+            </div>
+            <p id="last-updated" class="last-updated" aria-live="polite">Loading arrivals…</p>
+        </header>
+
+        <section class="commute-section" aria-labelledby="morning-heading">
+            <h2 id="morning-heading">Morning <span>To office</span></h2>
+            <div id="morning-itinerary" class="itinerary" aria-live="polite">Comparing live routes…</div>
+        </section>
+
+        <section class="commute-section" aria-labelledby="evening-heading">
+            <h2 id="evening-heading">Evening <span>To home</span></h2>
+            <div id="evening-itinerary" class="itinerary" aria-live="polite">Comparing live routes…</div>
+        </section>
+
+        <footer>Fastest-route estimates use live train predictions and allow 5 minutes for each transfer. Refreshes every 30 seconds.</footer>
+    </main>
+</body>
+</html>
